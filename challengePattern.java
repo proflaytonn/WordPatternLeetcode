@@ -29,8 +29,8 @@ public class challengePattern {
 
         for(int i = 0 ; i < patternArray.length ; i++)
         {
-            for(int j = i ; j<stringArray.length ; j++)
-            {
+            //for(int j = i ; j<stringArray.length ; j++)
+            //{
                 if(!temp2.contains(stringArray[i]))
                 {
                     temp2.add(stringArray[i]);
@@ -43,7 +43,7 @@ public class challengePattern {
                 if(!temp.containsKey(patternArray[i]))
                 {
                     temp.put(patternArray[i], stringArray[i]);
-                    break;
+                    //break;
                 }
                 else {
                     if(!temp.get(patternArray[i]).equals(stringArray[i]))
@@ -51,7 +51,7 @@ public class challengePattern {
                         return false;
                     }
                 }
-            }
+           // }
         }
         return true;
     }
